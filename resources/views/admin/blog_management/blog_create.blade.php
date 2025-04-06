@@ -51,8 +51,9 @@
                                         <label for="category">Category <span class="text-danger">*</span></label>
                                         <select name="category" id="category" class="form-control" required>
                                             <option value="">Select Category</option>
-                                           
-                                                <option value=""></option>
+                                                <option value="">Bag</option>
+                                                <option value="">Phone</option>
+                                                <option value="">Books</option>
                                            
                                         </select>
                                     </div>
@@ -106,11 +107,9 @@
                                         <label for="author_id">Author Name <span class="text-danger">*</span></label>
                                         <select id="author_id" name="author_id" class="form-control" required>
                                             <option value="">Select Author</option>
-                                           
-                                                <option value="" >
-                                                    
-                                                </option>
-                                            
+                                            <option value="">Amit</option>
+                                            <option value="" >Akash</option>
+                                            <option value="" >Bipin</option>
                                         </select>
                                     </div>
                                 
@@ -120,9 +119,10 @@
                                         <textarea id="excerpt" name="excerpt" class="form-control" placeholder="Enter Blog Excerpt" maxlength="255"></textarea>
                                     </div>
                                 
-                                    <!-- Submit Button -->
+                                    <!-- Submit And Clear Button -->
                                     <div class="text-end">
                                         <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-success">Clear</button>
                                     </div>
                                 </form>
                         </div>

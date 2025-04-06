@@ -76,8 +76,8 @@
                                                      data-description="{{ $row->description }}"
                                                      data-bs-toggle="modal" 
                                                      data-bs-target="#viewModal">
-                                                 View
-                                             </button>
+                                                        View
+                                                       </button>
 
                                                     <a href="{{ route('edit.blog', [$row->id]) }}"
                                                         class="btn btn-success btn-sm edit" title="Edit">

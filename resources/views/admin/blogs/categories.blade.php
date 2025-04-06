@@ -45,23 +45,23 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($categories as $index => $category)
+                                            @foreach ($category as $index => $categorys)
                                                 <tr>
-                                                    <td>{{ $loop->iteration }}</td>
-                                                    <td>{{ $category->name }}</td>
-                                                    <td>{{ $category->slug }}</td>
+                                                    <td>{{ ++$index }}</td>
+                                                    <td>{{ $categorys->name }}</td>
+                                                    <td>{{ $categorys->slug }}</td>
                                                     <td>
-                                                        <button class="btn btn-sm toggle-status {{ $category->status ? 'btn-success' : 'btn-danger' }}"
-                                                            data-id="{{ $category->id }}">
-                                                            {{ $category->status ? 'Active' : 'Inactive' }}
+                                                        <button class="btn btn-sm toggle-status {{ $categorys->status ? 'btn-success' : 'btn-danger' }}"
+                                                            data-id="{{ $categorys->id }}">
+                                                            {{ $categorys->status ? 'Active' : 'Inactive' }}
                                                         </button>
                                                     </td>
                                                     <td>
-                                                        <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-primary btn-sm">
+                                                        <a href="{{ route('categories.edit', $categorys->id) }}" class="btn btn-primary btn-sm">
                                                             <i class="fas fa-edit"></i> Edit
                                                         </a>
 
-                                                        <form action="{{ route('categories.destroy', $category->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure?');">
+                                                        <form action="{{ route('categories.destroy', $categorys->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure?');">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button type="submit" class="btn btn-danger btn-sm">

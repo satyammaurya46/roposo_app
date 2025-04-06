@@ -56,10 +56,8 @@ Route::middleware(['is_admin'])->prefix('admin')->group(function () {
     Route::post('blogCreate-store', [BlogCreateController::class, 'store'])->name('blogCreate.store');
 
 
-});
 
 
-Route::group(['prefix' => 'admin'], function () {
 
     // Category Routes
     Route::get('categories', [BlogCategoriesController::class, 'index'])->name('categories.index');
@@ -70,11 +68,11 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('categories/checkName', [BlogCategoriesController::class, 'checkName'])->name('categories.checkName');
 
     // Edit Category
-    Route::get('categories/{category}/edit', [BlogCategoriesController::class, 'edit'])->name('categories.edit');
-    Route::put('categories/{category}', [BlogCategoriesController::class, 'update'])->name('categories.update');
+    Route::get('categories-edit/{id}', [BlogCategoriesController::class, 'edit'])->name('categories.edit');
+    Route::put('categories-update/{id}', [BlogCategoriesController::class, 'update'])->name('categories.update');
 
     // Delete Category
-    Route::delete('categories/{category}', [BlogCategoriesController::class, 'destroy'])->name('categories.destroy');
+    Route::delete('categories/{categorys}', [BlogCategoriesController::class, 'destroy'])->name('categories.destroy');
 
     Route::post('/blog-categories/toggle-status', [BlogCategoriesController::class, 'toggleStatus'])
         ->name('blogCategories.toggleStatus');

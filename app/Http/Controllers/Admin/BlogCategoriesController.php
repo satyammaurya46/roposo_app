@@ -11,8 +11,8 @@ class BlogCategoriesController extends Controller
 {
     public function index()
     {
-        $categories = BlogCategory::latest()->get();
-        return view('admin.blogs.categories', compact('categories'));
+        $category = BlogCategory::latest()->get();
+        return view('admin.blogs.categories', compact('category'));
     }
 
     public function create()
