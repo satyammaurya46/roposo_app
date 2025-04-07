@@ -10,8 +10,8 @@
                         <h4 class="mb-sm-0">Blog List</h4>
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
-                                <li class="breadcrumb-item active">Editable Tables</li>
+                                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
+                                <li class="breadcrumb-item active"><a href="{{route('list.blog')}}">Tag List</a></li>
                             </ol>
                         </div>
                     </div>

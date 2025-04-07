@@ -30,13 +30,13 @@
                                     <!-- Blog Title -->
                                     <div class="mb-3">
                                         <label for="title">Blog Title <span class="text-danger">*</span></label>
-                                        <input type="text" id="title" name="title" class="form-control" placeholder="Enter Blog Title" maxlength="255" required>
+                                        <input type="text" id="blog_title" name="blog_title" class="form-control" placeholder="Enter Blog Title" maxlength="255" required>
                                     </div>
                                 
                                     <!-- Blog Content -->
                                     <div class="mb-3">
                                         <label for="content">Blog Content <span class="text-danger">*</span></label>
-                                        <textarea id="content" name="content" class="form-control rich-editor" placeholder="Enter Blog Content" maxlength="10000" required></textarea>
+                                        <textarea id="blog_content" name="content" class="form-control rich-editor" placeholder="Enter Blog Content" maxlength="10000" required></textarea>
                                     </div>
                                 
                                     <!-- Featured Image -->

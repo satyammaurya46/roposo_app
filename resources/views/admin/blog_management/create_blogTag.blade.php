@@ -9,8 +9,8 @@
                         <h4 class="mb-sm-0">{{ empty($blog) ? 'Create' : 'Update' }} Blog Tag</h4>
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Blog Management</a></li>
-                                <li class="breadcrumb-item active">Form Validation</li>
+                                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
+                                <li class="breadcrumb-item active"><a href="{{route('list.blog')}}">Tag List</a></li>
                             </ol>
                         </div>
                     </div>
