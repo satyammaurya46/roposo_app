@@ -32,6 +32,12 @@
     <!-- App Css-->
     <link href="{{ url('public/backend/assets/css/app.min.css') }}" id="app-style1" rel="stylesheet" type="text/css" />
 
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    
+    <!-- Tiney Editor -->
+    <script src="https://cdn.tiny.cloud/1/wu5xpdmgrpxm1fydsae8ypci3plzdfc51qmlbwkkszbl4fa4/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
+     
     
 
 </head>
